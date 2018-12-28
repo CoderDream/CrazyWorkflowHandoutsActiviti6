@@ -19,7 +19,7 @@
  ![width=40% bordered](<images/02_Login.png>)
 2. 用户名和密码分别为：amdin/test		
 3. 点击【Identity Management】图标，选择【Users】面板
- ![width=40% bordered](<images/03_Main.png>)
+ ![width=40% bordered](<images/03_MainIdentityManagement.png>)
 4. 新建用户
  ![width=40% bordered](<images/04_Users.png>)
  ![width=40% bordered](<images/05_CreateUser.png>)
@@ -27,6 +27,11 @@
  ![width=40% bordered](<images/06_UserList.png>)
 
 	- 2.2.3 定义流程 12 
+1. 点击页面左上角的图标，进入主界面
+ ![width=40% bordered](<images/07_MainPage.png>)
+2. 点击【Kickstart App】图标，进入流程界面
+ ![width=40% bordered](<images/08_CreateProcess.png>)
+3. 点击【Create Process】按钮：
 	- 2.2.4 发布流程 14 
 	- 2.2.5 启动与完成流程 15 
 	- 2.2.6 流程引擎管理 16 
