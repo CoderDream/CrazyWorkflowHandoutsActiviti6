@@ -4,10 +4,10 @@
 
 ## 课程资源
 
-代码地址：http://pan.baidu.com/s/1eRHYf1C
+配套源码地址：http://pan.baidu.com/s/1eRHYf1C
 提取密码： 06o2
 
-下载地址：https://pan.baidu.com/s/12YjylKeDxKQtbV6uMf7TPQ
+教学视频地址：https://pan.baidu.com/s/12YjylKeDxKQtbV6uMf7TPQ
 提取密码： r6pc
 
 ## 内容简介
