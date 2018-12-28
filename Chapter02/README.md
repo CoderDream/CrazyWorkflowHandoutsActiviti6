@@ -54,9 +54,9 @@
 ![](<images/18_CreateApp.png>)
 - 设置应用信息                                                                                                                                                 
 ![](<images/19_AppInfo.png>)
-- 准备将流程添加到应用
+- 准备将流程添加到应用，点击【Edit included models】进入添加页面
 ![](<images/20_AddModelsToApp.png>)
-- 点击流程，将流程添加到应用
+- 点击流程，将流程添加到应用，右上角的图标变成实心的即表示添加成功
 ![](<images/21_AddModel.png>)
 - 流程添加完成                                                                                                                                                 
 ![](<images/22_ModelAdded.png>)
