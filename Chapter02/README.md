@@ -112,7 +112,7 @@
 ## 2.4 编写第一个Activiti程序
 ### 2.4.1 如何运行本书示例
 ### 2.4.2 建立工程环境
-- 创建一个Java的Maven工程
+- 创建一个Java的Maven工程                                                                                                                               
 ![](<images/45_Project.png>)      
 - Maven 依赖
 ```xml
@@ -167,7 +167,7 @@
 </beans>
 ```
 ### 2.4.4 创建流程文件
-- 流程文件MyFirstProcess.bpmn（两个节点）
+- 流程文件MyFirstProcess.bpmn（两个节点）                                                                                                                               
 ![](<images/46_ProcessFile.png>)
 
 - xml内容
@@ -228,7 +228,7 @@ public class App {
 }
 ```
 
-- 运行结果
+- 运行结果（数据库中已自动创建28张表）
 ```
 04:04:56,050 [main] INFO  org.activiti.engine.impl.db.DbSqlSession  - 
 performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
@@ -245,6 +245,14 @@ Found MySQL: majorVersion=5 minorVersion=7
 04:05:31,511 [main] INFO  org.activiti.engine.impl.ProcessEngineImpl  - ProcessEngine default created
 04:05:31,790 [main] INFO  org.activiti.engine.ProcessEngines  - initialised process engine default
 ```
+- 表act_re_deployment新增1条记录                                                                                                                               
+![](<images/47_TableRecord1.png>)      
+- 表act_ge_bytearray新增2条记录                                                                                                                               
+![](<images/48_TableRecord2.png>)      
+- 第1条记录详情，xml格式文档                                                                                                                               
+![](<images/49_TableRecord3.png>)      
+- 第2条记录详情，图片格式的流程                                                                                                                               
+![](<images/50_TableRecord4.png>)      
 
 - 创建流程
 ```java
