@@ -15,15 +15,16 @@
 	- 2.2.1 请假流程概述 11 
 	- 2.2.2 新建用户 11 
 	
-1. 通过访问 http://localhost:8080/activiti-app 进入系统
+1. 在浏览器输入 http://localhost:8080/activiti-app 进入登陆界面：
  ![width=40% bordered](<images/02_Login.png>)
-2. 用户名和密码分别为：amdin/test		
-3. 点击【Identity Management】图标，选择【Users】面板
+2. 输入用户名和密码（amdin/test）进入系统
+3. 点击【Identity Management】图标，进入用户管理界面
  ![width=40% bordered](<images/03_MainIdentityManagement.png>)
-4. 新建用户
+4. 选择【Users】面板，点击【Create User】按钮，新建用户
  ![width=40% bordered](<images/04_Users.png>)
+输入用户信息
  ![width=40% bordered](<images/05_CreateUser.png>)
-5. 用户列表
+5. 创建两个用户worker和leader，列表如下
  ![width=40% bordered](<images/06_UserList.png>)
 
 	- 2.2.3 定义流程 12 
