@@ -19,6 +19,7 @@
 - 选择【Users】面板，点击【Create User】按钮，新建用户
 ![width=40% bordered](<images/04_Users.png>)
 - 输入用户信息
+
 ![width=40% bordered](<images/05_CreateUser.png>)
 - 创建两个用户worker和leader，列表如下
 ![width=40% bordered](<images/06_UserList.png>)
@@ -50,6 +51,7 @@
 - 创建应用
 ![width=40% bordered](<images/18_CreateApp.png>)
 - 设置应用信息
+
 ![width=40% bordered](<images/19_AppInfo.png>)
 - 准备将流程添加到应用
 ![width=40% bordered](<images/20_AddModelsToApp.png>)
@@ -69,6 +71,7 @@
 - worker准备发起流程
 ![width=40% bordered](<images/26_StartProcess1.png>)
 - 填入流程信息
+
 ![width=40% bordered](<images/27_StartProcess2.png>)
 - 流程流转图，现阶段节点在worker这里
 ![width=40% bordered](<images/28_StartProcess3.png>)
