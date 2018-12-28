@@ -112,7 +112,186 @@
 ## 2.4 编写第一个Activiti程序
 ### 2.4.1 如何运行本书示例
 ### 2.4.2 建立工程环境
+- 创建一个Java的Maven工程
+![](<images/45_Project.png>)      
+- Maven 依赖
+```xml
+<dependencies>
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.11</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.activiti</groupId>
+		<artifactId>activiti-engine</artifactId>
+		<version>6.0.0</version>
+	</dependency>
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-api</artifactId>
+		<version>1.7.21</version>
+	</dependency>
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-log4j12</artifactId>
+		<version>1.7.21</version>
+	</dependency>
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.47</version>
+	</dependency>
+</dependencies>
+```
+
 ### 2.4.3 创建配置文件
+- activiti.cfg.xml配置文件
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 流程引擎配置的bean -->
+	<bean id="processEngineConfiguration"
+		class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
+		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/act?
+            useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=UTC&amp;useSSL=false" />
+		<property name="jdbcDriver" value="com.mysql.jdbc.Driver" />
+		<property name="jdbcUsername" value="root" />
+		<property name="jdbcPassword" value="1234" />
+		<property name="databaseSchemaUpdate" value="true" />
+	</bean>
+</beans>
+```
 ### 2.4.4 创建流程文件
+- 流程文件MyFirstProcess.bpmn（两个节点）
+![](<images/46_ProcessFile.png>)
+
+- xml内容
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions ...">
+  <process id="myProcess" name="My process" isExecutable="true">
+    <startEvent id="startevent1" name="Start"></startEvent>
+    <endEvent id="endevent1" name="End"></endEvent>
+    <userTask id="usertask1" name="Write Vacation"></userTask>
+    <userTask id="usertask2" name="Audit"></userTask>
+    <sequenceFlow id="flow1" sourceRef="startevent1" targetRef="usertask1"></sequenceFlow>
+    <sequenceFlow id="flow2" sourceRef="usertask1" targetRef="usertask2"></sequenceFlow>
+    <sequenceFlow id="flow3" sourceRef="usertask2" targetRef="endevent1"></sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_myProcess">
+    <bpmndi:BPMNPlane bpmnElement="myProcess" id="BPMNPlane_myProcess">
+      <bpmndi:BPMNShape bpmnElement="startevent1" id="BPMNShape_startevent1">
+        <omgdc:Bounds height="35.0" width="35.0" x="220.0" y="250.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="endevent1" id="BPMNShape_endevent1">
+        <omgdc:Bounds height="35.0" width="35.0" x="701.0" y="250.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="usertask1" id="BPMNShape_usertask1">
+        <omgdc:Bounds height="55.0" width="105.0" x="320.0" y="240.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="usertask2" id="BPMNShape_usertask2">
+        <omgdc:Bounds height="55.0" width="105.0" x="521.0" y="240.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
+        <omgdi:waypoint x="255.0" y="267.0"></omgdi:waypoint>
+        <omgdi:waypoint x="320.0" y="267.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow2" id="BPMNEdge_flow2">
+        <omgdi:waypoint x="425.0" y="267.0"></omgdi:waypoint>
+        <omgdi:waypoint x="521.0" y="267.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow3" id="BPMNEdge_flow3">
+        <omgdi:waypoint x="626.0" y="267.0"></omgdi:waypoint>
+        <omgdi:waypoint x="701.0" y="267.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
+```
 ### 2.4.5 加载流程文件与启动流程
+
+- 自动创建数据库表
+```java
+public class App {
+	public static void main(String[] args) {
+		// 新建流程引擎
+		ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
+
+		// 关闭流程引擎
+		engine.close();
+	}
+}
+```
+
+- 运行结果
+```
+04:04:56,050 [main] INFO  org.activiti.engine.impl.db.DbSqlSession  - 
+performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql
+04:04:56,080 [main] INFO  org.activiti.engine.impl.db.DbSqlSession  - 
+Found MySQL: majorVersion=5 minorVersion=7
+04:05:25,503 [main] INFO  org.activiti.engine.impl.db.DbSqlSession  - 
+performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql
+04:05:25,511 [main] INFO  org.activiti.engine.impl.db.DbSqlSession  - 
+Found MySQL: majorVersion=5 minorVersion=7
+04:05:29,757 [main] INFO  org.activiti.engine.impl.db.DbSqlSession  - 
+performing create on identity with resource org/activiti/db/create/activiti.mysql.create.identity.sql
+04:05:29,764 [main] INFO  org.activiti.engine.impl.db.DbSqlSession  - 
+Found MySQL: majorVersion=5 minorVersion=7
+04:05:31,511 [main] INFO  org.activiti.engine.impl.ProcessEngineImpl  - ProcessEngine default created
+04:05:31,790 [main] INFO  org.activiti.engine.ProcessEngines  - initialised process engine default
+```
+
+- 创建流程
+```java
+public class App {
+	public static void main(String[] args) {
+		// 新建流程引擎
+		ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
+		// 存储服务
+		RepositoryService repositoryService = engine.getRepositoryService();
+		// 运行时服务
+		RuntimeService runtimeService = engine.getRuntimeService();
+		// 任务服务
+		TaskService taskService =engine.getTaskService();
+		// 部署服务
+		repositoryService.createDeployment().addClasspathResource("MyFirstProcess.bpmn").deploy();
+		// process的id属性
+		ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("myProcess");
+		
+		// 普通员工完成请假的任务
+		Task task = taskService.createTaskQuery().processInstanceId(processInstance.getId()).singleResult();
+		System.out.println("当前流程节点：" + task.getName());
+		taskService.complete(task.getId());
+		
+		// 经理审批任务
+		task = taskService.createTaskQuery().processInstanceId(processInstance.getId()).singleResult();
+		System.out.println("当前流程节点：" + task.getName());
+		taskService.complete(task.getId());
+		
+		// 流程结束
+		task = taskService.createTaskQuery().processInstanceId(processInstance.getId()).singleResult();
+		System.out.println("流程结束：" + task);
+		// 关闭流程引擎
+		engine.close();
+	}
+}
+```
+
+- 运行结果
+```
+04:34:35,090 [main] INFO  org.activiti.engine.compatibility.DefaultActiviti5CompatibilityHandlerFactory  
+- Activiti 5 compatibility handler implementation not found or error during instantiation : 
+- org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+04:34:35,196 [main] INFO  org.activiti.engine.impl.ProcessEngineImpl  - ProcessEngine default created
+04:34:35,202 [main] INFO  org.activiti.engine.ProcessEngines  - initialised process engine default
+当前流程节点：Write Vacation
+当前流程节点：Audit
+流程结束：null
+```
+
 ## 2.5 本章小结
