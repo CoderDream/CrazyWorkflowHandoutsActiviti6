@@ -11,7 +11,6 @@
 2. 执行D:\Java\apache-tomcat-8.5.12\bin\startup.bat；
 3. 启动成功需要一分钟左右。
 
-
 - 2.2 运行官方的Activiti示例 11 
 	- 2.2.1 请假流程概述 11 
 	- 2.2.2 新建用户 11 
@@ -19,7 +18,6 @@
 1. 通过访问 http://localhost:8080/activiti-app 进入系统
 2. 用户名和密码分别为：amdin/test		
 3. 点击【Activiti Identity Management】图标，选择【Users】面板
-
 
 	- 2.2.3 定义流程 12 
 	- 2.2.4 发布流程 14 
