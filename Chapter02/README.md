@@ -52,24 +52,40 @@
  ![width=40% bordered](<images/16_Process7.png>)
 
 ### 2.2.4 发布流程
- ![width=40% bordered](<images/17_ProcessInfo.png>)
+- 创建应用
+ ![width=40% bordered](<images/18_CreateApp.png>)
+- 设置应用信息
+ ![width=40% bordered](<images/19_AppInfo.png>)
+- 准备将流程添加到应用
+ ![width=40% bordered](<images/20_AddModelsToApp.png>)
+- 点击流程，将流程添加到应用
+ ![width=40% bordered](<images/21_AddModel.png>)
+- 流程添加完成
+ ![width=40% bordered](<images/22_ModelAdded.png>)
+- 准备应用发布
+ ![width=40% bordered](<images/23_AppPublish.png>)
+- 确认发布
+ ![width=40% bordered](<images/24_PublishConfirm.png>)
+- 应用发布完成
+ ![width=40% bordered](<images/25_AppAdded.png>)
+
 ### 2.2.5 启动与完成流程
 
- ![width=40% bordered](<images/18_CreateApp.png>)
- ![width=40% bordered](<images/19_AppInfo.png>)
- ![width=40% bordered](<images/20_AddModelsToApp.png>)
- ![width=40% bordered](<images/21_AddModel.png>)
- ![width=40% bordered](<images/22_ModelAdded.png>)
- ![width=40% bordered](<images/23_AppPublish.png>)
- ![width=40% bordered](<images/24_PublishConfirm.png>)
- ![width=40% bordered](<images/25_AppAdded.png>)
+- worker准备发起流程
  ![width=40% bordered](<images/26_StartProcess1.png>)
+- 填入流程信息
  ![width=40% bordered](<images/27_StartProcess2.png>)
+- 流程流转图，现阶段节点在worker这里
  ![width=40% bordered](<images/28_StartProcess3.png>)
+- 点击【Complete】按钮，发起流程
  ![width=40% bordered](<images/29_StartProcess4.png>)
+- 流程流转图，现阶段节点已转到leader这里
  ![width=40% bordered](<images/30_StartProcess5.png>)
+- leader登陆后的界面，有一个任务需要审核，点击右上角的【Complete】可以进行审核
  ![width=40% bordered](<images/31_ProcessAudit1.png>)
+- 直接点击【Process】面板，可以查看流程详情
  ![width=40% bordered](<images/32_ProcessAudit2.png>)
+- 点击右上角的【Complete】完成审核
  ![width=40% bordered](<images/33_ProcessAudit3.png>)
  ![width=40% bordered](<images/34_AdminLogin.png>)
  ![width=40% bordered](<images/35_AdminMain.png>)
