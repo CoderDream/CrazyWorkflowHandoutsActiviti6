@@ -37,7 +37,9 @@
 ![](<images/10_Process2.png>)
 - 继续创建第二个节点和流程结束节点：
 ![](<images/11_Process3.png>)
-- 设置节点的【Assignments】，选择分配给单个用户
+- 设置节点的【Assignments】
+![](<images/42_Assignments.png>)
+- 选择分配给单个用户
 ![](<images/12_Process4.png>)
 - 第一个节点的设置结果
 ![](<images/14_Process5.png>)
