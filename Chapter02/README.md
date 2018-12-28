@@ -60,7 +60,7 @@
 ![](<images/21_AddModel.png>)
 - 流程添加完成                                                                                                                                                 
 ![](<images/22_ModelAdded.png>)
-- 准备应用发布                                                                                                                                                 
+- 准备应用发布，点击右上角的【Publish】按钮                                                                                                                                                 
 ![](<images/23_AppPublish.png>)
 - 确认发布                                                                                                                                                 
 ![](<images/24_PublishConfirm.png>)
@@ -71,7 +71,7 @@
 
 - 使用worker账号登陆系统，准备发起流程
 ![](<images/26_StartProcess1.png>)
-- 填入流程信息                                                                                                                                                                                                                                                                                                  
+- 点击【Start process】，发起流程，可以点击Comments旁边的+号填入备注信息                                                                                                                                                                                                                                                                                                  
 ![](<images/27_StartProcess2.png>)
 - 流程流转图，现阶段节点在worker这里
 ![](<images/28_StartProcess3.png>)
