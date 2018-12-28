@@ -2,6 +2,14 @@
 《疯狂工作流讲义（第 2 版）基于 Activiti6.X》作者：杨恩雄
 
 
+## 课程资源
+
+代码地址：http://pan.baidu.com/s/1eRHYf1C
+提取密码： 06o2
+
+下载地址：https://pan.baidu.com/s/12YjylKeDxKQtbV6uMf7TPQ
+提取密码： r6pc
+
 ## 内容简介
 　　
 工作流引擎Activiti经过多年的发展，已经变成一个成熟的工作流框架，在2017年，Activiti推出了全新的6.0版本，除了完善对BPMN规范的支持外，还加入了对DMN规范的支持。为了能让广大的程序开发者一探新版本Activiti的功能，笔者在第一版的基础上，编写了本书的第二版。
