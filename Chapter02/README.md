@@ -49,26 +49,26 @@
 ### 2.2.4 发布流程
 - 创建应用                                                                                                                                                 
 ![](<images/18_CreateApp.png>)
-- 设置应用信息
+- 设置应用信息                                                                                                                                                 
 ![](<images/19_AppInfo.png>)
 - 准备将流程添加到应用
 ![](<images/20_AddModelsToApp.png>)
 - 点击流程，将流程添加到应用
 ![](<images/21_AddModel.png>)
-- 流程添加完成
+- 流程添加完成                                                                                                                                                 
 ![](<images/22_ModelAdded.png>)
-- 准备应用发布
+- 准备应用发布                                                                                                                                                 
 ![](<images/23_AppPublish.png>)
 - 确认发布                                                                                                                                                 
 ![](<images/24_PublishConfirm.png>)
-- 应用发布完成
+- 应用发布完成                                                                                                                                                 
 ![](<images/25_AppAdded.png>)
 
 ### 2.2.5 启动与完成流程
 
 - worker准备发起流程
 ![](<images/26_StartProcess1.png>)
-- 填入流程信息                                                                                                                                                 
+- 填入流程信息                                                                                                                                                                                                                                                                                                  
 ![](<images/27_StartProcess2.png>)
 - 流程流转图，现阶段节点在worker这里
 ![](<images/28_StartProcess3.png>)
@@ -82,10 +82,23 @@
 ![](<images/32_ProcessAudit2.png>)
 - 点击右上角的【Complete】完成审核
 ![](<images/33_ProcessAudit3.png>)
+- 填入流程信息                                                                                                                               
 ![](<images/34_AdminLogin.png>)
+- 填入流程信息                                                                                                                               
 ![](<images/35_AdminMain.png>)
+- 填入流程信息                                                                                                                               
 ![](<images/36_Config.png>)
+- 填入流程信息                                                                                                                               
 ![](<images/37_ConfigCheck.png>)
+- 填入流程信息                                                                                                                               
+![](<images/38_Info1.png>)
+- 填入流程信息                                                                                                                               
+![](<images/39_Info2.png>)
+- 填入流程信息                                                                                                                               
+![](<images/40_Info3.png>)
+- 填入流程信息                                                                                                                               
+![](<images/41_Info4.png>)
+- 填入流程信息                                                                                                                               
 ### 2.2.6 流程引擎管理
 ## 2.3 安装开发环境
 ### 2.3.1 下载Eclipse
