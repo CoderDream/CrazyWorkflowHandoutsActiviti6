@@ -69,7 +69,7 @@
 
 ### 2.2.5 启动与完成流程
 
-- worker准备发起流程
+- 使用worker账号登陆系统，准备发起流程
 ![](<images/26_StartProcess1.png>)
 - 填入流程信息                                                                                                                                                                                                                                                                                                  
 ![](<images/27_StartProcess2.png>)
@@ -79,7 +79,7 @@
 ![](<images/29_StartProcess4.png>)
 - 流程流转图，现阶段节点已转到leader这里
 ![](<images/30_StartProcess5.png>)
-- leader登陆后的界面，有一个任务需要审核，点击右上角的【Complete】可以进行审核
+- 使用 leader 账号登陆系统，leader登陆后的界面，有一个任务需要审核，点击右上角的【Complete】可以进行审核
 ![](<images/31_ProcessAudit1.png>)
 - 直接点击【Process】面板，可以查看流程详情
 ![](<images/32_ProcessAudit2.png>)
