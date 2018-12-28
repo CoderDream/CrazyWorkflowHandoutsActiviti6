@@ -101,9 +101,10 @@
 ![](<images/43_Info5.png>)
 - 实例信息列表                                                                                                                               
 ![](<images/40_Info3.png>)
-- 填入流程信息                                                                                                                               
-![](<images/41_Info4.png>)
 - 任务信息列表                                                                                                                               
+![](<images/41_Info4.png>)
+- 任务详细信息                                                                                                                               
+![](<images/44_Info6.png>)                                                                                                                       
 ### 2.2.6 流程引擎管理
 ## 2.3 安装开发环境
 ### 2.3.1 下载Eclipse
