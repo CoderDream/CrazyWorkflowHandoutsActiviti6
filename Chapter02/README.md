@@ -21,21 +21,25 @@
 - 点击【Identity Management】图标，进入用户管理界面
  ![width=40% bordered](<images/03_MainIdentityManagement.png>)
 
-- 选择【Users】面板，点击【Create User】按钮，新建用户，
+- 选择【Users】面板，点击【Create User】按钮，新建用户
  ![width=40% bordered](<images/04_Users.png>)
 
 - 输入用户信息
+
  ![width=40% bordered](<images/05_CreateUser.png>)
 
 - 创建两个用户worker和leader，列表如下
+
  ![width=40% bordered](<images/06_UserList.png>)
 
 ### 2.2.3 定义流程
 
 - 点击页面左上角的图标，进入主界面
+
  ![width=40% bordered](<images/07_MainPage.png>)
 
 - 点击【Kickstart App】图标，进入流程界面
+
  ![width=40% bordered](<images/08_CreateProcess.png>)
 
 - 点击【Create Process】按钮：设置流程名称
