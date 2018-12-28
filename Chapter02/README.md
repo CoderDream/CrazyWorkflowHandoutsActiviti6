@@ -10,14 +10,21 @@
 1. 将activiti-admin.war、activiti-app.war和activiti-rest.war拷贝到D:\Java\apache-tomcat-8.5.12\webapps目录下；
 2. 执行D:\Java\apache-tomcat-8.5.12\bin\startup.bat；
 3. 启动成功需要一分钟左右。
-
+![width=40% bordered](<images/01_Deploy.png>)
 - 2.2 运行官方的Activiti示例 11 
 	- 2.2.1 请假流程概述 11 
 	- 2.2.2 新建用户 11 
 	
 1. 通过访问 http://localhost:8080/activiti-app 进入系统
+ ![width=40% bordered](<images/02_Login.png>)
 2. 用户名和密码分别为：amdin/test		
-3. 点击【Activiti Identity Management】图标，选择【Users】面板
+3. 点击【Identity Management】图标，选择【Users】面板
+ ![width=40% bordered](<images/03_Main.png>)
+4. 新建用户
+ ![width=40% bordered](<images/04_Users.png>)
+ ![width=40% bordered](<images/05_CreateUser.png>)
+5. 用户列表
+ ![width=40% bordered](<images/06_UserList.png>)
 
 	- 2.2.3 定义流程 12 
 	- 2.2.4 发布流程 14 
