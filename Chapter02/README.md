@@ -33,11 +33,20 @@
 2. 点击【Kickstart App】图标，进入流程界面
  ![width=40% bordered](<images/08_CreateProcess.png>)
 3. 点击【Create Process】按钮：
- ![width=40% bordered](<images/09_Process1.png>)
+
 设置流程名称
- ![width=40% bordered](<images/17_ProcessInfo.png>)
+ 
+![width=40% bordered](<images/17_ProcessInfo.png>)
+
+
+
+
 在开始节点点击头像图标，创建第一个节点：
+ ![width=40% bordered](<images/09_Process1.png>)
+
+设置第一个节点
  ![width=40% bordered](<images/10_Process2.png>)
+
 继续创建第二个节点和流程结束节点：
  ![width=40% bordered](<images/11_Process3.png>)
 设置节点的【Assignments】，选择分配给单个用户
