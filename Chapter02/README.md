@@ -303,3 +303,60 @@ public class App {
 ```
 
 ## 2.5 本章小结
+
+## 查看MySql库中所有表的大小和记录数
+
+- 打开数据库 preformance_schema ,执行下面的语句
+``` sql
+SELECT
+	TABLE_NAME,
+	DATA_LENGTH,
+	INDEX_LENGTH,
+	(DATA_LENGTH + INDEX_LENGTH) AS length,
+	TABLE_ROWS,
+	concat(
+		round(
+			(DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024,
+			3
+		),
+		'MB'
+	) AS total_size
+FROM
+	information_schema. TABLES
+WHERE
+	TABLE_SCHEMA = 'act'
+ORDER BY
+	TABLE_ROWS DESC
+```
+- 运行结果
+```
+TABLE_NAME	DATA_LENGTH	INDEX_LENGTH	length	TABLE_ROWS	total_size
+act_hi_actinst	16384	65536	81920	24	0.078MB
+act_ge_bytearray	98304	16384	114688	14	0.109MB
+act_hi_taskinst	16384	16384	32768	12	0.031MB
+act_re_deployment	16384	0	16384	7	0.016MB
+act_re_procdef	16384	16384	32768	7	0.031MB
+act_hi_procinst	16384	49152	65536	6	0.063MB
+act_ge_property	16384	0	16384	4	0.016MB
+act_re_model	16384	49152	65536	0	0.063MB
+act_id_group	16384	0	16384	0	0.016MB
+act_ru_job	16384	65536	81920	0	0.078MB
+act_ru_identitylink	16384	81920	98304	0	0.094MB
+act_hi_varinst	16384	0	16384	0	0.016MB
+act_procdef_info	16384	32768	49152	0	0.047MB
+act_evt_log	16384	0	16384	0	0.016MB
+act_ru_execution	16384	98304	114688	0	0.109MB
+act_id_user	16384	0	16384	0	0.016MB
+act_hi_identitylink	16384	0	16384	0	0.016MB
+act_ru_variable	16384	65536	81920	0	0.078MB
+act_hi_detail	16384	0	16384	0	0.016MB
+act_ru_event_subscr	16384	32768	49152	0	0.047MB
+act_ru_timer_job	16384	65536	81920	0	0.078MB
+act_hi_comment	16384	0	16384	0	0.016MB
+act_ru_deadletter_job	16384	65536	81920	0	0.078MB
+act_id_membership	16384	16384	32768	0	0.031MB
+act_hi_attachment	16384	0	16384	0	0.016MB
+act_ru_task	16384	65536	81920	0	0.078MB
+act_id_info	16384	0	16384	0	0.016MB
+act_ru_suspended_job	16384	65536	81920	0	0.078MB
+```
