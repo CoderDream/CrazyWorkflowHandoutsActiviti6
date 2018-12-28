@@ -18,7 +18,7 @@
 ![](<images/03_MainIdentityManagement.png>)
 - 选择【Users】面板，点击【Create User】按钮，新建用户
 ![](<images/04_Users.png>)
-- 输入用户信息
+- 输入用户信息                                                                                                                                                 
 ![](<images/05_CreateUser.png>)
 - 创建两个用户worker和leader，列表如下
 ![](<images/06_UserList.png>)
@@ -47,7 +47,7 @@
 ![](<images/16_Process7.png>)
 
 ### 2.2.4 发布流程
-- 创建应用
+- 创建应用                                                                                                                                                 
 ![](<images/18_CreateApp.png>)
 - 设置应用信息
 ![](<images/19_AppInfo.png>)
@@ -59,7 +59,7 @@
 ![](<images/22_ModelAdded.png>)
 - 准备应用发布
 ![](<images/23_AppPublish.png>)
-- 确认发布
+- 确认发布                                                                                                                                                 
 ![](<images/24_PublishConfirm.png>)
 - 应用发布完成
 ![](<images/25_AppAdded.png>)
@@ -68,7 +68,7 @@
 
 - worker准备发起流程
 ![](<images/26_StartProcess1.png>)
-- 填入流程信息
+- 填入流程信息                                                                                                                                                 
 ![](<images/27_StartProcess2.png>)
 - 流程流转图，现阶段节点在worker这里
 ![](<images/28_StartProcess3.png>)
