@@ -6,16 +6,19 @@
 	- 2.1.1　下载和安装JDK 8 
 	- 2.1.2　下载和安装MySQL 9 
 	- 2.1.3 下载和安装Activiti 10 
+
+1. 将activiti-admin.war、activiti-app.war和activiti-rest.war拷贝到D:\Java\apache-tomcat-8.5.12\webapps目录下；
+2. 执行D:\Java\apache-tomcat-8.5.12\bin\startup.bat；
+3. 启动成功需要一分钟左右。
+
+
 - 2.2 运行官方的Activiti示例 11 
 	- 2.2.1 请假流程概述 11 
 	- 2.2.2 新建用户 11 
 	
-		http://localhost:8080/activiti-app
-		
-		用户名、密码：amdin/test
-		
-		
-		点击【Activiti Identity Management】图标，选择【Users】面板
+1. 通过访问 http://localhost:8080/activiti-app 进入系统
+2. 用户名和密码分别为：amdin/test		
+3. 点击【Activiti Identity Management】图标，选择【Users】面板
 
 
 	- 2.2.3 定义流程 12 
