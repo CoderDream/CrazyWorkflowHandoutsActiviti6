@@ -3,8 +3,9 @@
 ###  2.1.1 下载和安装JDK
 ###  2.1.2 下载和安装MySQL
 ###  2.1.3 下载和安装Activiti
-
-- 将activiti-admin.war、activiti-app.war和activiti-rest.war拷贝到D:\Java\apache-tomcat-8.5.12\webapps目录下；
+- 在浏览器输入 https://github.com/Activiti/Activiti/releases?after=7-201711-EA 进入 Activiti的GitHub网页；
+- 下载zip包并解压；
+- 将war文件夹的activiti-admin.war、activiti-app.war和activiti-rest.war拷贝到D:\Java\apache-tomcat-8.5.12\webapps目录下；
 - 执行D:\Java\apache-tomcat-8.5.12\bin\startup.bat；
 - 启动成功需要一分钟左右。
 ![](<images/01_Deploy.png>)
