@@ -83,7 +83,7 @@
 ![](<images/31_ProcessAudit1.png>)
 - 直接点击【Process】面板，可以查看流程详情
 ![](<images/32_ProcessAudit2.png>)
-- 点击右上角的【Complete】完成审核
+- 点击【Task】面板右上角的【Complete】完成审核
 ![](<images/33_ProcessAudit3.png>)
 - 在浏览器输入 http://localhost:8080/activiti-admin 进入admin项目登陆界面，输入用户名和密码（amdin/admin）进入系统：                                                                                                                      
 ![](<images/34_AdminLogin.png>)
@@ -91,19 +91,19 @@
 ![](<images/35_AdminMain.png>)
 - 修改端口信息，记得修改密码信息为test，因为app项目的admin账号对应的密码是test：                                                                                
 ![](<images/36_Config.png>)
-- 填入流程信息                                                                                                                               
+- 校验信息                                                                                                                               
 ![](<images/37_ConfigCheck.png>)
-- 发布信息                                                                                                                               
+- 已发布的信息列表                                                                                                                               
 ![](<images/38_Info1.png>)
-- 流程定义                                                                                                                               
+- 流程定义列表                                                                                                                               
 ![](<images/39_Info2.png>)
-- 流程详情                                                                                                                               
+- 单个流程信息详情                                                                                                                               
 ![](<images/43_Info5.png>)
-- 填入流程信息                                                                                                                               
+- 实例信息列表                                                                                                                               
 ![](<images/40_Info3.png>)
 - 填入流程信息                                                                                                                               
 ![](<images/41_Info4.png>)
-- 任务信息                                                                                                                               
+- 任务信息列表                                                                                                                               
 ### 2.2.6 流程引擎管理
 ## 2.3 安装开发环境
 ### 2.3.1 下载Eclipse
