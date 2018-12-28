@@ -52,14 +52,35 @@
 设置节点的【Assignments】，选择分配给单个用户
  ![width=40% bordered](<images/12_Process4.png>)
 第一个节点的设置结果
- ![width=40% bordered](<images/13_Process5.png>)
+ ![width=40% bordered](<images/14_Process5.png>)
 第二个节点的设置结果
- ![width=40% bordered](<images/14_Process6.png>)
+ ![width=40% bordered](<images/15_Process6.png>)
 点击左上角的按钮，保存流程
- ![width=40% bordered](<images/15_Process7.png>)
+ ![width=40% bordered](<images/16_Process7.png>)
 	- 2.2.4 发布流程 14 
- ![width=40% bordered](<images/09_Process1.png>)
+ ![width=40% bordered](<images/17_ProcessInfo.png>)
 	- 2.2.5 启动与完成流程 15 
+
+ ![width=40% bordered](<images/18_CreateApp.png>)
+ ![width=40% bordered](<images/19_AppInfo.png>)
+ ![width=40% bordered](<images/20_AddModelsToApp.png>)
+ ![width=40% bordered](<images/21_AddModel.png>)
+ ![width=40% bordered](<images/22_ModelAdded.png>)
+ ![width=40% bordered](<images/23_AppPublish.png>)
+ ![width=40% bordered](<images/24_PublishConfirm.png>)
+ ![width=40% bordered](<images/25_AppAdded.png>)
+ ![width=40% bordered](<images/26_StartProcess1.png>)
+ ![width=40% bordered](<images/27_StartProcess2.png>)
+ ![width=40% bordered](<images/28_StartProcess3.png>)
+ ![width=40% bordered](<images/29_StartProcess4.png>)
+ ![width=40% bordered](<images/30_StartProcess5.png>)
+ ![width=40% bordered](<images/31_ProcessAudit1.png>)
+ ![width=40% bordered](<images/32_ProcessAudit2.png>)
+ ![width=40% bordered](<images/33_ProcessAudit3.png>)
+ ![width=40% bordered](<images/34_AdminLogin.png>)
+ ![width=40% bordered](<images/35_AdminMain.png>)
+ ![width=40% bordered](<images/36_Config.png>)
+ ![width=40% bordered](<images/37_ConfigCheck.png>)
 	- 2.2.6 流程引擎管理 16 
 - 2.3 安装开发环境 17 
 	- 2.3.1 下载Eclipse 17 
