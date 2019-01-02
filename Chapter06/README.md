@@ -163,6 +163,8 @@ for (Group group : groups) {
 ```
 ### 6.2.8 singleResult方法
 
+*查询条件只能返回一条数据，否则会抛出异常*
+
 - 代码清单：SingleResult.java
 ```java
 Group group = identityService.createGroupQuery().groupName("Group_5")
