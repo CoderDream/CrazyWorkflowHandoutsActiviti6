@@ -35,17 +35,24 @@ act_re_deployment表中得到ID
 
 ### 7.1.7 添加BPMN模型资源
 
-
 - 代码清单：AddBpmnModelTest.java
 ```java
-// 新建部署构造器
-DeploymentBuilder deploymentBuilder = repositoryService.createDeployment();
-String resourceName = "My Process";
-BpmnModel bpmnModel = createProcessModel();
-// 发布部署构造器
-deploymentBuilder.addBpmnModel(resourceName, bpmnModel);
-// 发布部署构造器
-deploymentBuilder.deploy();
+public static void main(String[] args) throws Exception {
+	// 新建流程引擎
+	ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
+	// 存储服务
+	RepositoryService repositoryService = engine.getRepositoryService();
+	// 新建部署构造器
+	DeploymentBuilder deploymentBuilder = repositoryService.createDeployment();
+	String resourceName = "My Process";
+	BpmnModel bpmnModel = createProcessModel();
+	// 发布部署构造器
+	deploymentBuilder.addBpmnModel(resourceName, bpmnModel);
+	// 发布部署构造器
+	deploymentBuilder.deploy();
+	// 关闭流程引擎
+	engine.close();
+}
 
 private static BpmnModel createProcessModel() {
 	// 创建BPMN模型
@@ -76,8 +83,8 @@ private static BpmnModel createProcessModel() {
 ```
 - 执行结果
 ```
-act_re_deployment表中得到ID
-根据ID（DEPLOYMENT_ID_）在act_ge_bytearray表中查看数据
+通过查询数据库可以看到act_re_deployment表新增了一条数据；
+根据最新ID（DEPLOYMENT_ID_）在act_ge_bytearray表中查看数据，
 得到两条记录，一条为xml格式、另一条为图片格式
 ```
 
