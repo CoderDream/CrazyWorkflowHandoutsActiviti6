@@ -33,32 +33,32 @@ public class AddBpmnModelTest {
 		engine.close();
 	}
 	
-private static BpmnModel createProcessModel() {
-	// 创建BPMN模型
-	BpmnModel model = new BpmnModel();
-	// 创建一个流程定义
-	Process process = new Process();
-	model.addProcess(process);
-	process.setId("myProcess");
-	process.setName("My Process");
-	// 开始事件
-	StartEvent startEvent = new StartEvent();
-	startEvent.setId("startEvent");
-	process.addFlowElement(startEvent);
-	// 用户任务
-	UserTask userTask = new UserTask();
-	userTask.setName("User Task");
-	userTask.setId("userTask");
-	process.addFlowElement(userTask);
-	// 结束事件
-	EndEvent endEvent = new EndEvent();
-	endEvent.setId("endEvent");
-	process.addFlowElement(endEvent);		
-	// 添加流程顺序
-	process.addFlowElement(new SequenceFlow("startEvent", "userTask"));
-	process.addFlowElement(new SequenceFlow("userTask", "endEvent"));
-	return model;
-}
+	private static BpmnModel createProcessModel() {
+		// 创建BPMN模型
+		BpmnModel model = new BpmnModel();
+		// 创建一个流程定义
+		Process process = new Process();
+		model.addProcess(process);
+		process.setId("myProcess");
+		process.setName("My Process");
+		// 开始事件
+		StartEvent startEvent = new StartEvent();
+		startEvent.setId("startEvent");
+		process.addFlowElement(startEvent);
+		// 用户任务
+		UserTask userTask = new UserTask();
+		userTask.setName("User Task");
+		userTask.setId("userTask");
+		process.addFlowElement(userTask);
+		// 结束事件
+		EndEvent endEvent = new EndEvent();
+		endEvent.setId("endEvent");
+		process.addFlowElement(endEvent);		
+		// 添加流程顺序
+		process.addFlowElement(new SequenceFlow("startEvent", "userTask"));
+		process.addFlowElement(new SequenceFlow("userTask", "endEvent"));
+		return model;
+	}
 }
 
 //<?xml version="1.0" encoding="UTF-8"?>

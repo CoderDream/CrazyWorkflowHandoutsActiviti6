@@ -107,6 +107,7 @@ deploymentBuilder.deploy();
 ```
 - 执行结果
 ```
+如果禁用验证，则会成功部署；
 如果不禁用验证，则校验报错：发现了以元素 'test' 开头的无效内容。
 ```
 
@@ -130,6 +131,7 @@ deploymentBuilder.deploy();
 ```
 - 执行结果
 ```
+如果禁用验证，则会成功部署；
 如果不禁用验证，则报错信息：[Validation set: 'activiti-executable-process' | 
 //Problem: 'activiti-start-event-multiple-found'] : 
 //Multiple none start events are not supported - 
