@@ -157,7 +157,7 @@ deploymentBuilder.deploy();
 ### 7.4.1 查询部署资源
 
 在resources文件夹新建my_text.txt文本文件，内容为：my test content
-- 代码清单：SaveGroup.java
+- 代码清单：TextQueryTest.java
 ```java
 // 新建部署构造器
 DeploymentBuilder deploymentBuilder = repositoryService
