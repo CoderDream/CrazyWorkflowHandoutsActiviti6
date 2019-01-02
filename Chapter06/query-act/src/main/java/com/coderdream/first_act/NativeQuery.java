@@ -30,9 +30,8 @@ public class NativeQuery {
 		engine.close();
 	}
 }
-//0---Group_3---TYPE_0
-//1---Group_3---TYPE_0
-//5---Group_3---TYPE_9
-//9---Group_3---TYPE_8
-
+// 0---Group_3---TYPE_0
+// 1---Group_3---TYPE_0
+// 5---Group_3---TYPE_9
+// 9---Group_3---TYPE_8
 

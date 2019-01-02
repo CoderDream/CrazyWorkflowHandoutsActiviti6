@@ -8,7 +8,7 @@ import org.activiti.engine.ProcessEngines;
 import org.activiti.engine.identity.Group;
 
 /**
- * Hello world!
+ * SaveGroup
  *
  */
 public class SaveGroup {

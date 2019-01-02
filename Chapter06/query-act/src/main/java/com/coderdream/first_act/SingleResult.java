@@ -12,12 +12,14 @@ public class SingleResult {
 	public static void main(String[] args) {
 		// 新建流程引擎
 		ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
-		
-		IdentityService identityService = engine.getIdentityService();		
-		// 
-		Group group = identityService.createGroupQuery().groupName("Group_5").singleResult();
-		
-		System.out.println(group.getId() + "---" + group.getName() + "---" + group.getType());
+
+		IdentityService identityService = engine.getIdentityService();
+		//
+		Group group = identityService.createGroupQuery().groupName("Group_5")
+				.singleResult();
+
+		System.out.println(group.getId() + "---" + group.getName() + "---"
+				+ group.getType());
 
 		// 关闭流程引擎
 		engine.close();
